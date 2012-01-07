@@ -39,3 +39,247 @@ play.exceptions.CompilationException: Duplicate method Post(User, String, String
 	at play.Play.detectChanges(Play.java:614)
 	at play.Invoker$Invocation.init(Invoker.java:198)
 	at Invocation.HTTP Request(Play!)
+07 Jan 2012 22:57:39,267 ERROR ~ 
+
+@69279359j
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Unexpected Error
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:180)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:78)
+	at play.test.Fixtures.loadModels(Fixtures.java:168)
+	... 4 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:111)
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:178)
+	... 6 more
+Caused by: java.io.FileNotFoundException: C:\Users\Arun Venky\yabe\test\initial-data.yml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:109)
+	... 7 more
+07 Jan 2012 22:57:39,316 ERROR ~ 
+
+@69279359j
+Internal Server Error (500) for request GET /
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Unexpected Error
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:180)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:78)
+	at play.test.Fixtures.loadModels(Fixtures.java:168)
+	... 4 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:111)
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:178)
+	... 6 more
+Caused by: java.io.FileNotFoundException: C:\Users\Arun Venky\yabe\test\initial-data.yml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:109)
+	... 7 more
+07 Jan 2012 22:57:50,203 ERROR ~ 
+
+@69279359m
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Unexpected Error
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:180)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:78)
+	at play.test.Fixtures.loadModels(Fixtures.java:168)
+	... 4 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:111)
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:178)
+	... 6 more
+Caused by: java.io.FileNotFoundException: C:\Users\Arun Venky\yabe\test\initial-data.yml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:109)
+	... 7 more
+07 Jan 2012 22:57:50,241 ERROR ~ 
+
+@69279359m
+Internal Server Error (500) for request GET /@tests
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Unexpected Error
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Unexpected Error
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:180)
+	at play.templates.TemplateLoader.load(TemplateLoader.java:78)
+	at play.test.Fixtures.loadModels(Fixtures.java:168)
+	... 4 more
+Caused by: play.exceptions.UnexpectedException: Unexpected Error
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:111)
+	at play.vfs.VirtualFile.contentAsString(VirtualFile.java:178)
+	... 6 more
+Caused by: java.io.FileNotFoundException: C:\Users\Arun Venky\yabe\test\initial-data.yml (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at play.vfs.VirtualFile.inputstream(VirtualFile.java:109)
+	... 7 more
+07 Jan 2012 22:59:37,964 ERROR ~ 
+
+@69279359n
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+07 Jan 2012 22:59:37,991 ERROR ~ 
+
+@69279359n
+Internal Server Error (500) for request GET /@tests
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+07 Jan 2012 22:59:43,332 ERROR ~ 
+
+@69279359o
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+07 Jan 2012 22:59:43,365 ERROR ~ 
+
+@69279359o
+Internal Server Error (500) for request GET /@tests
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+07 Jan 2012 22:59:46,151 ERROR ~ 
+
+@69279359p
+Error during job execution (Bootstrap)
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
+07 Jan 2012 22:59:46,181 ERROR ~ 
+
+@69279359p
+Internal Server Error (500) for request GET /
+
+Execution exception (In /app/Bootstrap.java around line 13)
+RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+
+play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.jobs.Job.call(Job.java:155)
+	at Invocation.Job(Play!)
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:237)
+	at Bootstrap.doJob(Bootstrap.java:13)
+	at play.jobs.Job.doJobWithResult(Job.java:50)
+	at play.jobs.Job.call(Job.java:146)
+	... 1 more
+Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
+	at play.test.Fixtures.loadModels(Fixtures.java:187)
+	... 4 more
