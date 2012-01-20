@@ -1,5 +1,5 @@
-08 Jan 2012 19:29:16,172 INFO  ~ Starting C:\Users\Arun Venky\yabe
-08 Jan 2012 19:29:16,760 WARN  ~ You're running Play! in DEV mode
-08 Jan 2012 19:29:16,852 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-08 Jan 2012 19:29:23,045 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-08 Jan 2012 19:29:23,993 INFO  ~ Application 'Yet Another Blast Entertainment' is now started !
+17 Jan 2012 11:10:45,201 INFO  ~ Starting C:\Users\Kavinaesh\yabe
+17 Jan 2012 11:10:46,024 WARN  ~ You're running Play! in DEV mode
+17 Jan 2012 11:10:46,160 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+17 Jan 2012 11:11:23,733 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+17 Jan 2012 11:11:25,101 INFO  ~ Application 'Yet Another Blast Entertainment' is now started !
