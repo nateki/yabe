@@ -1,5 +1,8 @@
-17 Jan 2012 11:10:45,201 INFO  ~ Starting C:\Users\Kavinaesh\yabe
-17 Jan 2012 11:10:46,024 WARN  ~ You're running Play! in DEV mode
-17 Jan 2012 11:10:46,160 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-17 Jan 2012 11:11:23,733 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
-17 Jan 2012 11:11:25,101 INFO  ~ Application 'Yet Another Blast Entertainment' is now started !
+21 Jan 2012 18:05:17,650 INFO  ~ Starting C:\Users\Kavinaesh\yabe
+21 Jan 2012 18:05:17,660 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.secure)
+21 Jan 2012 18:05:17,670 INFO  ~ Module secure is available (C:\Users\Kavinaesh\play-1.2.4\modules\secure)
+21 Jan 2012 18:05:17,670 INFO  ~ Module crud is available (C:\Users\Kavinaesh\play-1.2.4\modules\crud)
+21 Jan 2012 18:05:18,580 WARN  ~ You're running Play! in DEV mode
+21 Jan 2012 18:05:18,740 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+21 Jan 2012 18:05:29,658 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+21 Jan 2012 18:05:30,960 INFO  ~ Application 'Yet Another Blast Entertainment' is now started !
