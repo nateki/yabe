@@ -1,6 +1,13 @@
 <!DOCTYPE html >
 <html>
     <head>
+<!--
+        <link rel="alternate" type="application/rss+xml"
+title="YOUR SITE TITLE RSS Feed"
+href="http://localhost:9000/feed/rss" />
+
+-->
+
         <title>#{get 'title' /}</title>		
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <link rel="stylesheet" type="text/css" media="screen" 
@@ -18,7 +25,7 @@
             </div>
             <ul id="tools">
                 <li>
-                    <a href="@{Admin.index()}">Log in to write something</a>
+                    <a href="@{Admin.index()}">Log in to scribble</a>
                 </li>
             </ul>
             <div id="title">
@@ -28,7 +35,8 @@
             </div>
         </div>
            <div id="main">
-            #{doLayout /} 
+            #{doLayout /}
+          <!--  // Content of the Application.index.html is inserted here -->
         </div>
         
         <p id="footer">

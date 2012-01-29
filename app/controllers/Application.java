@@ -17,6 +17,8 @@ public class Application extends Controller {
         ).from(1).fetch(10);
         render(frontPost, olderPosts);
     }
+
+    // render renders the default template /apps/views/Application/index.html
 @Before
 static void addDefaults() {
     renderArgs.put("blogTitle", Play.configuration.getProperty("blog.title"));
@@ -57,4 +59,8 @@ public static void listTagged(String tag) {
     List<Post> posts = Post.findTaggedWith(tag);
     render(tag, posts);
 }
+public static void rss(String id) {
+  // do staff ...
+  render("Application/view.rss");
+} 
 }
