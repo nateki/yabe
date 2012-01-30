@@ -58,8 +58,13 @@ public static void listTagged(String tag) {
     List<Post> posts = Post.findTaggedWith(tag);
     render(tag, posts);
 }
-public static void rss() {
+
+ public static void rss() {
  List<Post> allPosts = Post.find("order by postedAt desc").from(0).fetch(10);
  render(allPosts);
-} 
+}
+
+public static void rss_xml() {
+  render();
+                }
 }
