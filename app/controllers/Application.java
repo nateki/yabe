@@ -12,8 +12,7 @@ public class Application extends Controller {
 
     public static void index() {
           Post frontPost = Post.find("order by postedAt desc").first();
-        List<Post> olderPosts = Post.find(
-            "order by postedAt desc"
+        List<Post> olderPosts = Post.find("order by postedAt desc"
         ).from(1).fetch(10);
         render(frontPost, olderPosts);
     }
@@ -59,8 +58,8 @@ public static void listTagged(String tag) {
     List<Post> posts = Post.findTaggedWith(tag);
     render(tag, posts);
 }
-public static void rss(String id) {
-  // do staff ...
-  render("Application/view.rss");
+public static void rss() {
+ List<Post> allPosts = Post.find("order by postedAt desc").from(0).fetch(10);
+ render(allPosts);
 } 
 }

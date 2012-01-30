@@ -11,8 +11,7 @@
     
         <div class="older-posts">
             <h3>Older posts <span class="from">from this blog</span></h3>
-        
-            #{list items:olderPosts, as:'oldPost'}
+             #{list items:olderPosts, as:'oldPost'}
                 #{display post:oldPost, as:'teaser' /}
             #{/list}
         </div>
