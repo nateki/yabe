@@ -13,8 +13,9 @@ GET     /admin/new                          Admin.form
 POST    /admin/myPosts/{id}                 Admin.save
 POST    /admin/new                          Admin.save
 # Accept: application/rss+xml
-GET    /feed.xml    Application.rss_xml(format:'rss')
-GET    /feed.html    Application.rss
+# GET    /feed.xml    Application.feed(format:'rss')
+GET    /feed.{format}    Application.feed
+# GET    /feed.html    Application.feed
 
 
 # Import CRUD routes

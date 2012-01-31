@@ -1,0 +1,15 @@
+<h3>Welcome ${format}</h3>
+#{if allPosts.size()}
+            <div class="all-posts">
+            <h3>All posts <span class="from">from this blog</span></h3>
+            
+            #{list items:allPosts, as:'allPost'}
+                #{display post:allPost, as:'teaser' /}
+            #{/list}
+        </div>
+#{/if}
+#{else}
+    <div class="empty">
+        There is currently nothing to read here.
+    </div>
+#{/else}

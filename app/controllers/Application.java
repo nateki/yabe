@@ -23,6 +23,13 @@ static void addDefaults() {
     renderArgs.put("blogTitle", Play.configuration.getProperty("blog.title"));
     renderArgs.put("blogBaseline", Play.configuration.getProperty("blog.baseline"));
 }
+
+@Before
+static void setFormat() {
+	if (request.headers.get("accept").value().equals("text/xml")) {
+		request.format = "xml";
+	}
+}
 public static void show(Long id) {
     Post post = Post.findById(id);
     String randomID = Codec.UUID();
@@ -59,12 +66,12 @@ public static void listTagged(String tag) {
     render(tag, posts);
 }
 
- public static void rss() {
- List<Post> allPosts = Post.find("order by postedAt desc").from(0).fetch(10);
+ public static void feed(String format) {
+     if (format.equals("xml")) {
+         request.format = "rss";
+        render();
+	}
+   List<Post> allPosts = Post.find("order by postedAt desc").from(0).fetch(10);
  render(allPosts);
 }
-
-public static void rss_xml() {
-  render();
-                }
 }
