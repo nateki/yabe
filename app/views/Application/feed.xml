@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <rss version="2.0">
+<!--
+<rss version="2.0">
+-->
  <channel>
  <title>Main localsite xml</title>
  <link>http://localhost:9000/</link>
  <description>Main website</description>
-
- <item>
- <title>About the model layer</title>
-  <link>http://localhost:9000/posts/1</link>
- <description>About the model layer</description>
-<guid>http://localhost:9000/posts/1</guid>
- </item>
-
- <item>
- <title>Just a test of YABE</title>
-  <link>http://localhost:9000/posts/2</link>
- <description>Just a test of YABE</description>
-<guid>http://localhost:9000/posts/2</guid>
- </item>
-
- <item>
- <title>The MVC application</title>
-  <link>http://localhost:9000/posts/3</link>
- <description>The MVC application</description>
-<guid>http://localhost:9000/posts/3</guid>
- </item>
-
- </channel>
- </rss>
-
+                  #{list items:allPosts, as:'allPost'}
+                #{display post:allPost/}
+            #{/list}
+  </channel>
+  <!--
+ <?/rss?>
+-->

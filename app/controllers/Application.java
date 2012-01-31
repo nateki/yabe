@@ -67,11 +67,7 @@ public static void listTagged(String tag) {
 }
 
  public static void feed(String format) {
-     if (format.equals("xml")) {
-         request.format = "rss";
-        render();
-	}
-   List<Post> allPosts = Post.find("order by postedAt desc").from(0).fetch(10);
- render(allPosts);
+     List<Post> allPosts = Post.find("order by postedAt desc").from(0).fetch(10);
+    render(allPosts);
 }
 }

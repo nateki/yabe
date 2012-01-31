@@ -1,0 +1,7 @@
+
+<item>
+<title>rss${_post.title}</title>
+  <link>http://localhost:9000@{Application.show(_post.id)}</link>
+ <description>${_post.title}</description>
+<guid>@{Application.show(_post.id)}</guid>
+</item>
